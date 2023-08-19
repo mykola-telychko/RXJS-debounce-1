@@ -1,8 +1,10 @@
 import { of, timer } from 'rxjs';
 import { debounce } from 'rxjs/operators';
 
+// https://www.learnrxjs.io/learn-rxjs/operators/filtering/debounce
+
 //emit four strings
-const example = of('WAIT', 'ONE', 'SECOND', 'Last will display');
+const example = of('WAIT', 'ONE', 'SECOND', 'THIRD', 'Last will display');
 /*
     Only emit values after a second has passed between the last emission,
     throw away all other values
